@@ -9,20 +9,24 @@
 <link rel="stylesheet" href="https://use.typekit.net/bdd4bfe.css">
     </head>
     <body>
+        <!-- Start of Navigation Items -->
         <header class="navigation">
             <div class="navigationItems">
                 <div class="logoBox">
                     <img class="logo" src="Images/JT_Logo.png">
                 </div>
-                    <nav class="topNav">
-                        <div class="nav-Links">
-                            <a href=""><div class="navItem navLink">Work</div></a>
-                            <a href=""><div class="navItem navLink">About</div></a>
-                            <a href=""><div class="navItem navLink">Resume</div></a>
-                        </div>
-                    </nav>
+                <nav class="topNav">
+                    <div class="nav-Links">
+                        <a href=""><div class="navItem navLink">Work</div></a>
+                        <a href=""><div class="navItem navLink">About</div></a>
+                        <a href=""><div class="navItem navLink">Resume</div></a>
+                    </div>
+                </nav>
             </div>
         </header>
+        <!-- End of Navigation Items -->
+
+        <!-- Start of Hero Banner -->
         <section class="hero">
             <div class="content">
                 <div class="contentTitle">
@@ -33,7 +37,12 @@
                 </div>
             </div>
         </section>
+        <!-- End of Hero Banner -->
+
+        <!-- Start of Portfolio Section -->
         <section class="portfolioContent">
+
+            <!-- Start of Portfolio Content -->
             <div class="caseStudies">
                 <div class="studiesItems">
                     <img src="../Images/CaseStudies_Hero.png" width="482px" height="300px">
@@ -49,43 +58,54 @@
                     <h3>Other Works</h3>
                     <p>A collection of selectd works in print and digital advertising.</p>
                     <!-- Button Place Holder for Future <button>View Other Works</button>-->
-                    <p>Coming Soon</p>
+                    <p style="margin-top: 45px">Coming Soon</p>
                 </div>
                 <div class="worksItems">
-                    <img src="../UX_UI_HW_17/Images/OtherWorks_Hero.png" width="482" height="300">
+                    <img src="../Images/OtherWorks_Hero.png" width="482" height="300">
                 </div>
             </div>
-            <div>
+            <!-- End of Portfolio Content -->
+
+            <!-- Start of Contact Me Section -->
+            <div class="inTouch_Headline">
                 <h2>Let's Get In Touch</h2>
             </div>
-            <form class="contact">
-                <div>
-                    <div>
-                        <input placeholder="Enter your full name">
+            <form class="contactForm">
+                <div class="topInputs">
+                    <div class="leftInput">
+                        <input type="text" class="nameInput" placeholder="Enter your full name" maxlength="256">
                     </div>
-                    <div>
-                        <input placeholder="Enter your email">
+                    <div class="rightInput">
+                        <input type="text" class="emailInput" placeholder="Enter your email" maxlength="256">
                     </div>
                 </div>
-                <div>
-                    <input placeholder="Enter your message">
+                <div class="bottomInput">
+                    <textarea type="text" class="messageInput" placeholder="Enter your message" maxlength="5000"></textarea>
                 </div>
                 <div>
                     <button>Send Message</button>
                 </div>
             </form>
-        </section>
+            <!-- End of Contact Me Section -->
 
-        <footer>
-            <div class="footerLogo">
-                <img src="Images/JT_Logo.png" width="75.8px" height="65px">
-            </div>
-            <div class="footerText">
-                <p>©2022 Jay Tavitas. All Rights Reserved.</p>
-            </div>
-            <div class="floatRight">
-                <img src="Images/icons8-linkedin-144.png">
+        </section>
+        <!-- End of Portfolio Section -->
+
+        <!-- Start of Footer Section -->
+        <footer class="flexFoot">
+            <div class="footerItems">
+                <div class="footerLogo">
+                    <img src="Images/JT_Logo.png" width="75.8px" height="65px">
+                </div>
+                <div class="footerText">
+                    <p>©2022 Jay Tavitas. All Rights Reserved.</p>
+                </div>
+                <div class="floatRight">
+                    <img src="Images/icons8-linkedin-144.png" width="40" height="40">
+                </div>
             </div>
         </footer>
+        <!-- End of Footer Section -->
+
     </body>
 </html>
