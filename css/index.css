@@ -11,7 +11,7 @@
     align-items: center;
     background-image: url("../Images/navBkg.png");
     background-repeat: no-repeat;
-    background-size: 1920px 105px;    
+    background-size: 1920px 105px;      
 }
 .navigationItems {
     display: flex;
@@ -34,7 +34,7 @@
     align-items: center;
     padding: 0px; 
     width: 280px;
-    height: 19px;
+    height: 40px;
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -50,11 +50,11 @@
 .navItem {
     padding-top: 0px;
     padding-bottom: 0px;
-    cursor: pointer;
     color: #ffffff;
 }
 .navLink {
     width: 80px;
+    height: 40px;
     position: relative;
     display: inline-block;
     vertical-align: top;
@@ -67,6 +67,82 @@
     font-style: normal;
     font-weight: 400;
     line-height: 19px;
+    cursor: pointer;
+}
+.navLink:hover ul, :focus ul {
+  opacity: 1;
+  visibility: visible;
+}
+.navLink-Work::after {
+  content:"";
+  width: 0%;
+  height: 5px;
+  border-radius: 7px;
+  position: absolute;
+  left: 20px;
+  bottom: 12px;
+  background-color: #f26b76;
+  transition: width 200ms ease-in;
+}
+.navLink-Work:hover::after, :focus::after {
+  width: 61%;
+}
+.navLink-About::after {
+  content:"";
+  width: 0%;
+  height: 5px;
+  border-radius: 7px;
+  position: absolute;
+  left: 16px;
+  bottom: 12px;
+  background-color: #f26b76;
+  transition: width 200ms ease-in;
+}
+.navLink-About:hover::after, :focus::after {
+  width: 69%;
+}
+.navLink-Resume::after {
+  content:"";
+  width: 0%;
+  height: 5px;
+  border-radius: 7px;
+  position: absolute;
+  left: 10px;
+  bottom: 12px;
+  background-color: #f26b76;
+  transition: width 200ms ease-in;
+}
+.navLink-Resume:hover::after, :focus::after {
+  width: 85%;
+}
+.navDropList {
+  list-style:none;
+  width: 110px;
+  position:absolute;
+  text-align: left;
+  top: 20px;
+  left: -35px;
+  padding: 15px 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background-color:#ffffff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms ease-in-out;
+  z-index: 1;
+}
+.navDropList li{
+  color: #000000;
+  list-style:none;
+  padding: 5px;
+  transition: background-color 200ms ease-in-out;
+  
+}
+.navDropList li:hover, li:focus {
+  background-color: #B3D5F2;
 }
 
 /* Hero Banner */
@@ -185,6 +261,28 @@
     font-size: 16px;
     font-weight: 400;
     color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.studiesCopy button:hover {
+    background: #f26b76;
+    border-radius: 7px;
+    border: 1.5px #D90404 solid;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.studiesCopy button:active {
+    background: #A6323B;
+    border: none;
+    border-radius: 7px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 600;
+    color: #f26b76;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.4);
 }
 
 /* Portfolio Content - Other Works Block */
@@ -350,6 +448,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 32px;
     padding: 10px;
     width: 180px;
     height: 45px;
@@ -360,7 +459,28 @@
     font-size: 16px;
     font-weight: 400;
     color: #ffffff;
-    margin-top: 22px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.contactForm button:hover {
+    background: #f26b76;
+    border-radius: 7px;
+    border: 1.5px #D90404 solid;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.contactForm button:active {
+    background: #A6323B;
+    border: none;
+    border-radius: 7px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 600;
+    color: #f26b76;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.4);
 }
 
 /* Footer Styles */
