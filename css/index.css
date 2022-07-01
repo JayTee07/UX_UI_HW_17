@@ -297,6 +297,7 @@
     flex-direction: row;
     align-items: center;
 }
+
 .worksItems {
     height: 300px;
     display: flex;
